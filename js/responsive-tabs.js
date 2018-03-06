@@ -175,7 +175,7 @@ var fakewaffle = ( function ( $, fakewaffle ) {
 
 			if (fakewaffle.currentPosition === 'panel') {
 				// Activate current tabs
-				var current = $( e.target ).context.id.replace( /collapse-/g, '#' );
+				var current = e.target.id.replace( /collapse-/g, '#' );
 				$( 'a[href="' + current + '"]' ).tab( 'show' );
 
 				// Update the content with active
